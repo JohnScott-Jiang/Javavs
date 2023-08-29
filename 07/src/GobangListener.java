@@ -279,8 +279,10 @@ public class GobangListener extends MouseAdapter implements ActionListener, Goba
                             Judge jd = new Judge(coloum1, row1);
                             if (jd.judge()) {
                                 if (cco) {
+                                    gm.clock.stop();
                                     JOptionPane.showMessageDialog(gm, "黑棋获胜");
                                 } else {
+                                    gm.clock.stop();
                                     JOptionPane.showMessageDialog(gm, "白棋获胜");
                                 }
                                 gm.removeMouseListener(this);
@@ -316,8 +318,10 @@ public class GobangListener extends MouseAdapter implements ActionListener, Goba
                             Judge jd = new Judge(coloum1, row1);
                             if (jd.judge()) {
                                 if (cco) {
+                                    gm.clock.stop();
                                     JOptionPane.showMessageDialog(gm, "白棋获胜");
                                 } else {
+                                    gm.clock.stop();
                                     JOptionPane.showMessageDialog(gm, "黑棋获胜");
                                 }
                                 gm.removeMouseListener(this);
@@ -377,8 +381,10 @@ public class GobangListener extends MouseAdapter implements ActionListener, Goba
                 Judge jd = new Judge(xx, yy);
                 if (jd.judge()) {
                     if (cco) {
+                        gm.clock.stop();
                         JOptionPane.showMessageDialog(gm, "黑棋获胜");
                     } else {
+                        gm.clock.stop();
                         JOptionPane.showMessageDialog(gm, "白棋获胜");
                     }
                     gm.removeMouseListener(this); // 移除监听，这时将不能对棋盘进行操作
@@ -424,8 +430,10 @@ public class GobangListener extends MouseAdapter implements ActionListener, Goba
                 Judge jd = new Judge(xx, yy);
                 if (jd.judge()) {
                     if (cco) {
+                        gm.clock.stop();
                         JOptionPane.showMessageDialog(gm, "白棋获胜");
                     } else {
+                        gm.clock.stop();
                         JOptionPane.showMessageDialog(gm, "黑棋获胜");
                     }
                     gm.removeMouseListener(this); // 移除监听，这时将不能对棋盘进行操作

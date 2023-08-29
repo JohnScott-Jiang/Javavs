@@ -1,4 +1,4 @@
-package scr;
+package src;
 public class StuGroup implements Mygroup {
     private Student[] stu;
     private int length;
