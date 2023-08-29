@@ -1,7 +1,7 @@
 import java.util.*;
 
-import scr.StuGroup;
-import scr.Student;
+import src.StuGroup;
+import src.Student;
 
 public class App {
     public static void main(String[] args) {
